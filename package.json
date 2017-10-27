@@ -1,0 +1,37 @@
+{
+  "name": "boost-ui",
+  "description": "TeachBoost v2 user interface kit",
+  "version": "0.0.1",
+  "author": {
+    "name": "TeachBoost",
+    "email": "team@teachboost.com",
+    "url": "http://teachboost.com"
+  },
+  "contributors": [
+    "Andrew Gioia <andrewgioia@gmail.com>",
+    "Mike Gioia <mikegioia@gmail.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/teachboost/boost-ui.git"
+  },
+  "keywords": [],
+  "homepage": "http://teachboost.com",
+  "dependencies": {
+      "bootstrap-v4-dev": "*"
+  },
+  "devDependencies": {},
+  "license": "(OFL-1.1 AND MIT)",
+  "main": "css/ui.css",
+  "ignore": [
+    "*/.*",
+    "*.json"
+  ],
+  "bugs": {
+    "url": "https://github.com/andrewgioia/boost-ui/issues",
+    "email": "andrewgioia@gmail.com"
+  },
+  "engines": {
+    "node": "*"
+  }
+}
