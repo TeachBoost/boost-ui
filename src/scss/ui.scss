@@ -1,0 +1,47 @@
+// Base system and Bootstrap includes
+@import "../../node_modules/bootstrap-v4-dev/scss/variables";
+@import "../../node_modules/bootstrap-v4-dev/scss/mixins";
+@import "core/variables";
+
+// Reset and dependencies
+@import "../../node_modules/bootstrap-v4-dev/scss/normalize";
+@import "../../node_modules/bootstrap-v4-dev/scss/print";
+
+// Core styles
+@import "../../node_modules/bootstrap-v4-dev/scss/reboot";
+@import "../../node_modules/bootstrap-v4-dev/scss/type";
+@import "../../node_modules/bootstrap-v4-dev/scss/images";
+@import "../../node_modules/bootstrap-v4-dev/scss/grid";
+@import "../../node_modules/bootstrap-v4-dev/scss/tables";
+@import "../../node_modules/bootstrap-v4-dev/scss/forms";
+@import "../../node_modules/bootstrap-v4-dev/scss/buttons";
+@import "core/inputs";
+
+// Components
+/*
+@import "transitions";
+@import "dropdown";
+@import "button-group";
+@import "input-group";
+@import "custom-forms";
+@import "nav";
+@import "navbar";
+@import "card";
+@import "breadcrumb";
+@import "pagination";
+@import "badge";
+@import "jumbotron";
+@import "alert";
+@import "progress";
+@import "media";
+@import "list-group";
+@import "responsive-embed";
+@import "close";*/
+
+// JS components
+@import "../../node_modules/bootstrap-v4-dev/scss/modal";
+@import "../../node_modules/bootstrap-v4-dev/scss/tooltip";
+@import "../../node_modules/bootstrap-v4-dev/scss/popover";
+
+// Utility classes
+@import "../../node_modules/bootstrap-v4-dev/scss/utilities";
