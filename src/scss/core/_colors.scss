@@ -1,0 +1,27 @@
+// Backgrounds
+.bg {
+    &-blue { background-color: $blue; }
+    &-blue-lt { background-color: lighten( $light-blue, 43% ); }
+    &-blue-dk { background-color: $dark-blue; }
+    &-gray { background-color: $gray; }
+    &-gray-dk { background-color: $dark-gray; }
+    &-green { background-color: $green; }
+    &-green-trans { background-color: rgba( $green, .60 ); }
+    &-light-blue { background-color: lighten( $blue, 52% ); }
+    &-purple { background-color: $purple; }
+    &-tan { background-color: $tan; }
+    &-tan-lt { background-color: $light-tan; }
+    &-teal { background-color: $teal; }
+    &-teal-trans { background-color: rgba( $teal, .60 ); }
+    &-white { background-color: #fff; }
+}
+
+// Text
+.text {
+    &-blue { color: $blue; }
+    &-brown { color: $brown; }
+    &-lightest-blue { color: $lightest-blue; }
+    &-purple { color: $purple; }
+    &-teal { color: $teal; }
+    &-white { color: #fff; }
+}

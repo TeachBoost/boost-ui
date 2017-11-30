@@ -1,1 +1,58 @@
+// Typography
+$font-family-sans-serif: "proxima-nova",  -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+$font-family-serif: "brandon-grotesque", "Josefin Sans", Signika;
+//$font-size-base: 16px;
+//$line-height-base: 1.6;
+//$font-weight-base: 300;
+$text-color: #333;
+$text-hover: #111;
+
+// Colors
+$blue:                  #1b77c1;
+$blue-border:           #094b6d;
+$brown:                 #4c3f3d;
+$dark-blue:             #006291;
+$dark-gray:             #555;
+$dark-gray-border:      #333;
+$dark-green:            #44A647;
+$dark-green-border:     #113C12;
+$dark-purple:           #644E98;
+$dark-purple-border:    #423362;
+$dark-red:              #923d2f;
+$dark-red-border:       #4a2119;
+$dark-teal:             #388c96;
+$dark-teal-border:      #1c474c;
+$dark-yellow:           #dba259;
+$dark-yellow-border:    #764e1a;
+$gray:                  #ccc;
+$gray-border:           #555;
+$green:                 #4CAF50;
+$green-border:          #195919;
+$hover-gray:            #aaa;
+$hover-gray-border:     #333;
+$light-blue:            #458EB6;
+$light-tan:             #e7e6e6;
+$lightest-blue:         #cde8f3;
+$purple:                #7d61bd;
+$purple-border:         #584584;
+$red:                   #b94f3b;
+$red-border:            #682e23;
+$tan:                   #D7D7D7;
+$teal:                  #009797;
+$teal-border:           #1F5257;
+$yellow:                #e2b77a;
+$yellow-border:         #905d19;
+
+// Windows
+$sm-window-size-min:    '780px';
+$sm-window-size-max:    '1049px';
+$md-window-size-min:    '1050px';
+$md-window-size-max:    '1279px';
+$lg-window-size-min:    '1280px';
+$lg-window-size-max:    '1599px';
+$xl-window-size-min:    '1600px';
+
 // Bootstrap overwrites
+// nothing yet

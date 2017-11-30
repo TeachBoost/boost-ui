@@ -1,7 +1,7 @@
 {
   "name": "boost-ui",
   "description": "TeachBoost v2 user interface kit",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": {
     "name": "TeachBoost",
     "email": "team@teachboost.com",
@@ -18,7 +18,8 @@
   "keywords": [],
   "homepage": "http://teachboost.com",
   "dependencies": {
-      "bootstrap-v4-dev": "*"
+      "bootstrap-v4-dev": "*",
+      "font-awesome": "*"
   },
   "devDependencies": {},
   "license": "(OFL-1.1 AND MIT)",

@@ -1,47 +1,60 @@
-// Base system and Bootstrap includes
+// Base system and includes
+@import "core/variables";
+@import "core/overwrites";
 @import "../../node_modules/bootstrap-v4-dev/scss/variables";
 @import "../../node_modules/bootstrap-v4-dev/scss/mixins";
-@import "core/variables";
+@import "mixins/screens";
 
 // Reset and dependencies
 @import "../../node_modules/bootstrap-v4-dev/scss/normalize";
 @import "../../node_modules/bootstrap-v4-dev/scss/print";
 
+// Fonts
+@import url( 'https://fonts.googleapis.com/css?family=Josefin+Sans:300,600' );
+@import "../../node_modules/font-awesome/scss/font-awesome";
+
 // Core styles
 @import "../../node_modules/bootstrap-v4-dev/scss/reboot";
 @import "../../node_modules/bootstrap-v4-dev/scss/type";
 @import "../../node_modules/bootstrap-v4-dev/scss/images";
+//@import "../../node_modules/bootstrap-v4-dev/scss/code";
 @import "../../node_modules/bootstrap-v4-dev/scss/grid";
 @import "../../node_modules/bootstrap-v4-dev/scss/tables";
 @import "../../node_modules/bootstrap-v4-dev/scss/forms";
 @import "../../node_modules/bootstrap-v4-dev/scss/buttons";
+@import "core/borders";
+@import "core/colors";
 @import "core/inputs";
+@import "core/position";
+@import "core/type";
+@import "core/buttons";
 
 // Components
-/*
-@import "transitions";
-@import "dropdown";
-@import "button-group";
-@import "input-group";
-@import "custom-forms";
-@import "nav";
-@import "navbar";
-@import "card";
-@import "breadcrumb";
-@import "pagination";
-@import "badge";
-@import "jumbotron";
-@import "alert";
-@import "progress";
-@import "media";
-@import "list-group";
-@import "responsive-embed";
-@import "close";*/
+//@import "../../node_modules/bootstrap-v4-dev/scss/transitions";
+@import "../../node_modules/bootstrap-v4-dev/scss/dropdown";
+@import "../../node_modules/bootstrap-v4-dev/scss/button-group";
+@import "../../node_modules/bootstrap-v4-dev/scss/input-group";
+//@import "../../node_modules/bootstrap-v4-dev/scss/custom-forms";
+@import "../../node_modules/bootstrap-v4-dev/scss/nav";
+@import "../../node_modules/bootstrap-v4-dev/scss/navbar";
+@import "../../node_modules/bootstrap-v4-dev/scss/card";
+//@import "../../node_modules/bootstrap-v4-dev/scss/breadcrumb";
+@import "../../node_modules/bootstrap-v4-dev/scss/pagination";
+//@import "../../node_modules/bootstrap-v4-dev/scss/badge";
+//@import "../../node_modules/bootstrap-v4-dev/scss/jumbotron";
+@import "../../node_modules/bootstrap-v4-dev/scss/alert";
+@import "../../node_modules/bootstrap-v4-dev/scss/progress";
+@import "../../node_modules/bootstrap-v4-dev/scss/media";
+@import "../../node_modules/bootstrap-v4-dev/scss/list-group";
+@import "../../node_modules/bootstrap-v4-dev/scss/responsive-embed";
+@import "../../node_modules/bootstrap-v4-dev/scss/close";
+@import "elements/interstitial";
 
 // JS components
 @import "../../node_modules/bootstrap-v4-dev/scss/modal";
 @import "../../node_modules/bootstrap-v4-dev/scss/tooltip";
 @import "../../node_modules/bootstrap-v4-dev/scss/popover";
+//@import "../../node_modules/bootstrap-v4-dev/scss/carousel";
 
 // Utility classes
 @import "../../node_modules/bootstrap-v4-dev/scss/utilities";

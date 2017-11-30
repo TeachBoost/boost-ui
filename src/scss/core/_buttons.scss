@@ -1,0 +1,9 @@
+/*
+ * Buttons */
+
+// New buttons
+.btn-dark {
+    @include button-variant( $btn-primary-color, #444, #444 );
+}
+
+// Button overwrites

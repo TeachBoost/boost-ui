@@ -1,0 +1,25 @@
+// Media query mixins
+
+@mixin mq-small {
+    @media (max-width: #{$sm-window-size-max}) {
+        @content;
+    }
+}
+
+@mixin mq-medium {
+    @media (min-width: #{$md-window-size-min}) and (max-width: #{$md-window-size-max}) {
+        @content;
+    }
+}
+
+@mixin mq-large {
+    @media (min-width: #{$lg-window-size-min}) and (max-width: #{$lg-window-size-max}) {
+        @content;
+    }
+}
+
+@mixin mq-huge {
+    @media (min-width: #{$xl-window-size-min}) {
+        @content;
+    }
+}
