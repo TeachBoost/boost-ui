@@ -115,7 +115,7 @@ p {
 
     // beefed up paragraph copy
     &.bigger {
-        font-size: 18px;
+        font-size: 19px;
     }
 
     // smaller text
@@ -157,7 +157,7 @@ p {
     }
     p {
         &.bigger {
-            font-size: 16px;
+            font-size: 17px;
         }
     }
 }
@@ -166,7 +166,7 @@ p {
 @include mq-medium {
     p {
         &.bigger {
-            font-size: 17px;
+            font-size: 18px;
         }
     }
 }
@@ -176,16 +176,16 @@ p {
     h2 {
         font-size: 27px;
     }
-    p {
-        &.bigger {
-            font-size: 17px;
-        }
-    }
 }
 
 // Extra large windows
 @include mq-huge {
     h1 {
         font-size: 42px;
+    }
+    p {
+        &.bigger {
+            font-size: 21px;
+        }
     }
 }

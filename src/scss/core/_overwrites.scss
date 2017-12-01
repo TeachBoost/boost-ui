@@ -6,3 +6,10 @@ $brand-primary: $blue;
 $brand-success: $green;
 $brand-danger: $red;
 $brand-info: $teal;
+
+// Buttons
+$btn-padding-x: 1rem; // default 1
+$btn-padding-y: .5rem; // default .5
+$btn-padding-x-lg: 1.5rem; // default 1.5
+$btn-padding-y-lg: .75rem; // default .75
+$btn-transition: none; // default all .2s ease-in-out

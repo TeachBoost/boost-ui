@@ -1,8 +1,13 @@
 @charset "UTF-8";
 /*
  * Vendor variable overwrites */
-/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,600");
+html,
+body {
+  height: 100%;
+  width: 100%; }
+
+/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -4228,7 +4233,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   padding: 0.5rem 1rem;
   font-size: 1rem;
   border-radius: 0.25rem;
-  transition: all 0.2s ease-in-out; }
+  transition: none; }
   .btn:focus, .btn:hover {
     text-decoration: none; }
   .btn:focus, .btn.focus {
@@ -4543,33 +4548,33 @@ input[type="button"].btn-block {
     border-bottom-right-radius: 7px; }
 
 .bg-blue {
-  background-color: #1b77c1; }
+  background-color: #1b77c1 !important; }
 .bg-blue-lt {
-  background-color: #e2eef4; }
+  background-color: #e2eef4 !important; }
 .bg-blue-dk {
-  background-color: #006291; }
+  background-color: #006291 !important; }
 .bg-gray {
-  background-color: #ccc; }
+  background-color: #ccc !important; }
 .bg-gray-dk {
-  background-color: #555; }
+  background-color: #555 !important; }
 .bg-green {
-  background-color: #4CAF50; }
+  background-color: #4CAF50 !important; }
 .bg-green-trans {
-  background-color: rgba(76, 175, 80, 0.6); }
+  background-color: rgba(76, 175, 80, 0.6) !important; }
 .bg-light-blue {
-  background-color: #e9f4fc; }
+  background-color: #e9f4fc !important; }
 .bg-purple {
-  background-color: #7d61bd; }
+  background-color: #7d61bd !important; }
 .bg-tan {
-  background-color: #D7D7D7; }
+  background-color: #D7D7D7 !important; }
 .bg-tan-lt {
-  background-color: #e7e6e6; }
+  background-color: #e7e6e6 !important; }
 .bg-teal {
-  background-color: #009797; }
+  background-color: #009797 !important; }
 .bg-teal-trans {
-  background-color: rgba(0, 151, 151, 0.6); }
+  background-color: rgba(0, 151, 151, 0.6) !important; }
 .bg-white {
-  background-color: #fff; }
+  background-color: #fff !important; }
 
 .text-blue {
   color: #1b77c1; }
@@ -5114,7 +5119,7 @@ p {
     font-size: 21px;
     line-height: 32px; }
   p.bigger {
-    font-size: 18px; }
+    font-size: 19px; }
   p.smaller {
     font-size: 14px; }
 
@@ -5146,19 +5151,19 @@ p {
     font-size: 21px; }
 
   p.bigger {
-    font-size: 16px; } }
+    font-size: 17px; } }
 @media (min-width: 1050px) and (max-width: 1279px) {
   p.bigger {
-    font-size: 17px; } }
+    font-size: 18px; } }
 @media (min-width: 1280px) and (max-width: 1599px) {
   h2 {
-    font-size: 27px; }
-
-  p.bigger {
-    font-size: 17px; } }
+    font-size: 27px; } }
 @media (min-width: 1600px) {
   h1 {
-    font-size: 42px; } }
+    font-size: 42px; }
+
+  p.bigger {
+    font-size: 21px; } }
 /*
  * Buttons */
 .btn-dark {
@@ -5179,6 +5184,9 @@ p {
     background-color: #2b2b2b;
     background-image: none;
     border-color: #252525; }
+
+.btn {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
 
 .dropup,
 .dropdown {
@@ -6381,14 +6389,57 @@ button.close {
 #interstitial {
   width: 100%;
   height: 100%;
-  position: fixed;
-  display: table; }
+  border-top: 8px solid rgba(0, 0, 0, 0.2); }
+  #interstitial #outer {
+    position: relative;
+    display: table;
+    height: 100%;
+    width: 100%;
+    font-size: 19px;
+    vertical-align: middle;
+    overflow: hidden;
+    min-height: 600px; }
+    #interstitial #outer.curve {
+      /*&:before {
+          background: lighten( $blue, 12% );
+          background-size: 150%;
+          background-position: 100% 0;
+          transform: skewY(3deg);
+          height: 200px;
+          bottom: -125px;
+          //border-top: 1px solid lighten( $purple, 12% );
+      }*/ }
+      #interstitial #outer.curve:before, #interstitial #outer.curve:after {
+        width: 200%;
+        height: 100%;
+        position: absolute;
+        left: -50%;
+        bottom: 0;
+        content: "";
+        z-index: 0;
+        border-radius: 50%;
+        -webkit-backface-visibility: hidden; }
+      #interstitial #outer.curve:after {
+        background: #fff;
+        background-size: 150%;
+        background-position: 100% 0;
+        transform: skewY(-3deg);
+        height: 200px;
+        bottom: -140px; }
   #interstitial #inner {
     display: table-cell;
-    margin: 25px 25px 75px;
-    width: 100%;
-    height: 100%;
-    vertical-align: middle; }
+    vertical-align: middle;
+    padding: 20px 0 30px; }
+  #interstitial footer {
+    position: absolute;
+    bottom: 20px;
+    right: 25px;
+    font-size: 14px;
+    color: #666;
+    z-index: 2; }
+    #interstitial footer .footer-link {
+      display: inline-block;
+      padding: 0 0 0 10px; }
 
 .modal-open {
   overflow: hidden; }

@@ -6,4 +6,6 @@
     @include button-variant( $btn-primary-color, #444, #444 );
 }
 
-// Button overwrites
+.btn {
+    border-bottom: $input-btn-border-width solid rgba(0,0,0,.2);
+}

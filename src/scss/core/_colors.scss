@@ -1,19 +1,19 @@
 // Backgrounds
 .bg {
-    &-blue { background-color: $blue; }
-    &-blue-lt { background-color: lighten( $light-blue, 43% ); }
-    &-blue-dk { background-color: $dark-blue; }
-    &-gray { background-color: $gray; }
-    &-gray-dk { background-color: $dark-gray; }
-    &-green { background-color: $green; }
-    &-green-trans { background-color: rgba( $green, .60 ); }
-    &-light-blue { background-color: lighten( $blue, 52% ); }
-    &-purple { background-color: $purple; }
-    &-tan { background-color: $tan; }
-    &-tan-lt { background-color: $light-tan; }
-    &-teal { background-color: $teal; }
-    &-teal-trans { background-color: rgba( $teal, .60 ); }
-    &-white { background-color: #fff; }
+    &-blue { background-color: $blue !important; }
+    &-blue-lt { background-color: lighten( $light-blue, 43% ) !important; }
+    &-blue-dk { background-color: $dark-blue !important; }
+    &-gray { background-color: $gray !important; }
+    &-gray-dk { background-color: $dark-gray !important; }
+    &-green { background-color: $green !important; }
+    &-green-trans { background-color: rgba( $green, .60 ) !important; }
+    &-light-blue { background-color: lighten( $blue, 52% ) !important; }
+    &-purple { background-color: $purple !important; }
+    &-tan { background-color: $tan !important; }
+    &-tan-lt { background-color: $light-tan !important; }
+    &-teal { background-color: $teal !important; }
+    &-teal-trans { background-color: rgba( $teal, .60 ) !important; }
+    &-white { background-color: #fff !important; }
 }
 
 // Text

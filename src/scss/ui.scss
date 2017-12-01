@@ -6,6 +6,7 @@
 @import "mixins/screens";
 
 // Reset and dependencies
+@import "core/normalize";
 @import "../../node_modules/bootstrap-v4-dev/scss/normalize";
 @import "../../node_modules/bootstrap-v4-dev/scss/print";
 
